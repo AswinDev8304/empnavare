@@ -1,0 +1,15 @@
+<div class="container bg-warning" style="margin-bottom: 100px; margin-top: 14px;">
+    <h1 class="text-center mt-3">Edit Employee Details</h1>
+    <form (ngSubmit)="editEmployee()" class="w-50 container text-center">
+        
+        <div class="mb-3">
+            <label for="formFile" class="form-label">Profile Image</label>
+            <input (change)="onFileChange($event)" #imageInput name="image" class="form-control" type="file" id="formFile">
+            <img [src]="url" alt="Selected Image" class="mt-2" style="max-width: 200px;">
+        </div>
+        <br>
+        <button type="submit" class="btn btn-outline-dark flex-shrink-0 mb-5">
+            Edit Details
+        </button>
+    </form>
+</div>

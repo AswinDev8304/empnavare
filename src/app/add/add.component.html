@@ -1,0 +1,19 @@
+<div class="container bg-warning " style="margin-bottom: 100px; margin-top: 14px;">
+    <h1 class="text-center mt-3">Add New Employee</h1>
+    <form [formGroup]="empForm" action=""  class="w-50  container text-center">
+        <input formControlName="empId" type="text" class="form-control mt-2" id="pn1" placeholder="enter emp id">
+        <input formControlName="empName" type="text" class="form-control mt-2" id="pn2"
+            placeholder="enter employee name">
+        <input formControlName="email" type="text" class="form-control mt-2" id="pn3" placeholder="enter email id">
+        <input formControlName="Mobile" type="text" class="form-control mt-2" id="pn5" placeholder="enter mobile">
+        <div class="mb-3">
+            <label for="formFile" class="form-label"></label>
+            <input class="form-control" type="file" (change)="onselectFile(imageInput.files)" #imageInput id="formFile">
+          </div>
+        <br>
+        <button (click)="add()" type="submit" class="btn btn-outline-dark flex-shrink-0 mb-5">
+    
+            Add Employee
+        </button> <br>
+    </form>
+</div>

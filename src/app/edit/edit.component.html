@@ -1,0 +1,16 @@
+<div class="container bg-warning " style="margin-bottom: 100px; margin-top: 14px;">
+    <h1 class="text-center mt-3">Edit Employee Details</h1>
+    <form (ngSubmit)="editEmployee()" action=""  class="w-50  container text-center">
+        <input [(ngModel)]="edata.empId" name="empId" type="text" class="form-control mt-2" id="pn1" placeholder="enter emp id">
+        <input [(ngModel)]="edata.empName" name="empName" type="text" class="form-control mt-2" id="pn2"
+            placeholder="enter employee name">
+        <input [(ngModel)]="edata.email" name="email" type="text" class="form-control mt-2" id="pn3" placeholder="enter email id">
+        <input [(ngModel)]="edata.Mobile" name="mobile" type="text" class="form-control mt-2" id="pn5" placeholder="enter mobile">
+        
+        <br>
+        <button  type="submit" class="btn btn-outline-dark flex-shrink-0 mb-5">
+    
+           edit details
+        </button> <br>
+    </form>
+</div>
